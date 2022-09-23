@@ -1,4 +1,3 @@
-console.log("Javascript successful");
 var binary = document.getElementById("binaryOutput");
 var remainder;
 var workingOut;
@@ -8,11 +7,11 @@ var hexidecimal = document.getElementById("hexidecimalOutput");
 var actualHexidecimalNumber;
 var text = document.getElementById("textInput").value;
 var textBinary = document.getElementById("textBinary");
-var textHexidecimal = document.getElementById("textHexidecimal");
+//var textHexidecimal = document.getElementById("textHexidecimal");
 var splitText;
 var i;
 var actualTextBinary = "";
-var actualTextHexidecimal = "";
+//var actualTextHexidecimal = "";
 var workingOut2;
 
 function base2(number) {
@@ -274,7 +273,7 @@ function letter(text) {
         }
         actualTextBinary = actualTextBinary + textBinary.value + " ";
         console.log("Binary number (Working out): " + textBinary.value);
-        workingOut2 = workingOut;
+        /*workingOut2 = workingOut;
         while(workingOut2 > 0) {
             remainder = workingOut2 % 16;
             workingOut2 = Math.floor(workingOut2 / 16);
@@ -314,12 +313,12 @@ function letter(text) {
         }
         textHexidecimal.value = textHexidecimal.value.split("").reverse().join("");
         actualTextHexidecimal = actualTextHexidecimal + textHexidecimal.value;
-        console.log("Hexidecimal number (Working out): " + textHexidecimal.value);
+        console.log("Hexidecimal number (Working out): " + textHexidecimal.value);*/
     }
-    textHexidecimal.value = actualTextHexidecimal;
+    //textHexidecimal.value = actualTextHexidecimal;
     textBinary.value = actualTextBinary;
     console.log("Binary number: " + textBinary.value);
-    console.log("Hexidecimal number: " +  textHexidecimal.value);
+    //console.log("Hexidecimal number: " +  textHexidecimal.value);
 }
 
 function cleartext() {
@@ -333,13 +332,15 @@ function cleartext() {
     textBinary.value = "";
     workingOut = "";
     workingOut2 = "";
-    textHexidecimal.value = "";
-    actualTextHexidecimal.value = "";
+    remainder="";
+    //textHexidecimal.value = "";
+    //actualtextHexidecimal = "";
     actualTextBinary = "";
+    splitText = "";
     document.getElementById("textInput").value = "";
-    console.log("Text: " + number);
-    console.log("Binary number: " + binary.value);
-    console.log("Hexidecimal number: " + hexidecimal.value);
+    console.log("Text: " + text);
+    console.log("Binary number: " + textBinary.value);
+    //console.log("Hexidecimal number: " + textHexidecimal.value);
 }
 
 function convert() {

@@ -1,0 +1,20 @@
+.binaryOutput{
+    width: 500px;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+label,h1,h3{
+    color: #000000;
+    text-align: center;
+}
+input{
+    background-color: #000000;
+    color: #000000;
+}
+
+.split{
+    background-color: #000000;
+    width: 25px;
+}
